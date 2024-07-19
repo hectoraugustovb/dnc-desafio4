@@ -25,8 +25,8 @@ const Modal: React.FC<ModalInterface> = ({ type, setModalState, taskInModal, tas
         });
     };
 
-    const yesButton = (type: 'edit' | 'delete', modalOpen: boolean, newTaskName?: string) => {
-        if (type === 'edit' && newTaskName !== undefined) {
+    const yesButton = (type: 'edit' | 'delete', modalOpen: boolean, newTaskName: string) => {
+        if (type === 'edit' && newTaskName !== '') {
             tasks[taskInModal] = {
                 name: newTaskName,
                 status: tasks[taskInModal].status
@@ -66,7 +66,7 @@ const Modal: React.FC<ModalInterface> = ({ type, setModalState, taskInModal, tas
 
                     <div className={styles.buttons}>
                         <button className={styles.cancel_button} onClick={() => noButton('delete', false)}>Não</button>
-                        <button className={styles.confirm_button} onClick={() => yesButton('delete', false)}>Sim</button>
+                        <button className={styles.confirm_button} onClick={() => yesButton('delete', false, '')}>Sim</button>
                     </div>
                 </div>
             }

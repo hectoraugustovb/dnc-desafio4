@@ -1,0 +1,7 @@
+.config_task {
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}

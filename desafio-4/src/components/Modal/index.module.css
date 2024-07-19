@@ -1,0 +1,79 @@
+.modal {
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway';
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-top: 2rem;
+    width: 750px;
+    height: 430px;
+
+    border-radius: 8px;
+
+    .modal_title {
+        color: #000;
+        font-weight: 600;
+        font-size: 2.3rem;
+
+        margin-top: 3rem;
+    }
+
+    input, p {
+        background: none;
+        border: none;
+        text-align: center;
+        color: #000;
+
+        overflow: auto;
+        width: 70%;
+        font-size: 2rem;
+        font-weight: 400;
+        
+        margin-bottom: 3.5rem;
+    }
+
+    input::placeholder {
+        color: #000;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .buttons {
+        margin-bottom: 2rem;
+
+        button {
+            width: 15rem;
+            height: 4rem;
+            margin: 0 0.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .cancel_button {
+            border: none;
+            background-color: #0C70F2;
+            
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+        
+        .cancel_button:hover {
+            background-color: #0b5fcd;
+        }
+
+
+        .confirm_button {
+            color: #2D2D2D;
+            background: none;
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+    }
+}

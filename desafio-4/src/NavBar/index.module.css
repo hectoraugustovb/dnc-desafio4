@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #0C70F2;
+    display: flex;
+    position: relative;
+
+    p {
+        margin: 1.3rem 0 0 2rem;
+        width: 9rem;
+        height: 3rem;
+        text-align: center;
+        align-content: center;
+
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    p:last-child {
+        background-color: #fff;
+        color: #0C70F2;
+        border-radius: 7px 7px 0 0;
+    }
+}
